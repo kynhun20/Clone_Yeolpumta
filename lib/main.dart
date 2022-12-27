@@ -21,7 +21,6 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(),
         body: DefaultTabController(
           length: 4,
           child: Scaffold(
@@ -30,17 +29,17 @@ class Home extends StatelessWidget {
               children: [
                 Container(
                   child: Center(
+                    child: Text("planner"),
+                  ),
+                ),
+                Container(
+                  child: Center(
                     child: Text("home"),
                   ),
                 ),
                 Container(
                   child: Center(
-                    child: Text("search"),
-                  ),
-                ),
-                Container(
-                  child: Center(
-                    child: Text("save"),
+                    child: Text("rank"),
                   ),
                 ),
               ],
